@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // search()  =  Kendisine paramete olarak verilen değer doğrultusunda değişken içeriğinde arayarak ilk eşleşmeyi sağlayan 
+        // değişken içerğini indis / index  değerini geriye döndürür.(Düzenli ifade alabilir). 
+        // i   = İçeriğin büyük harf / küçük harf olmasına bakmaz (Düzenli ifade).
+
+
+        var metin = "Javascript dünya üzerinde en yaygın olarak kullanılan bir script dilidir.";
+        document.write(metin + "<br />");
+
+        var sonuc = metin.search("script");  // küçük büyük harfe duyarlı  4
+        document.write(sonuc + "<br />");
+
+        var sonuc = metin.search(/script/i);  // bu şekilde düzenli ifade olur  4
+        document.write(sonuc + "<br />");
+    </script>
+</body>
+</html>

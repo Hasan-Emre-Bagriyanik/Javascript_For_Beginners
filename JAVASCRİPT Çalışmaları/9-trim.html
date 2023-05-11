@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // trim() değişken içeriğinin varsa başındaki ve sonundaki tüm boşlukları temizleyerek değeri gerie döndürür.
+
+        var ornek  = "     Javascript    ";
+        var icerik = "eğitim seti<br>";
+        sonucbir = ornek + icerik;
+        document.write(ornek + icerik);
+        //alert(sonucbir);
+
+
+        var islem = ornek.trim();
+        var uyari = islem +" "+ icerik;
+        document.write(islem+ " " + icerik);
+        //alert(uyari);
+
+    </script>
+</body>
+</html>

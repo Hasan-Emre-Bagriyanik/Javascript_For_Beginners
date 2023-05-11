@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // lasindexOf()  =  Değişken içerisinde parametrik olarak verilen değeri arar ve son eşleşmeyi sağlayan değişken 
+        // içerisinin index / indis değerini geriye döndürür.
+        
+        var metin = "Javascript Javascript Javascript Javascript Javascript";
+        document.write(metin + "<br>");
+
+        var sonuc = metin.lastIndexOf("Javascript"); // küçük büyük harfe duyarlıdır. en sondaki değeri okur ona göre index numarası döndürür.
+        document.write(sonuc + "<br>"); // 44
+        
+
+        var sonuc = metin.lastIndexOf("Javascript", 32); // Yanına verdiğimiz değere kadar gidebilir o değerin üzerini aşamaz ondan önceki istenilen arar.
+        document.write(sonuc + "<br>"); 
+    </script>
+</body>
+</html>

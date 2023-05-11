@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // substr() = kendisine verilecek olan parametreler ile tanımlanmış değişken içeriği aralığında bulunan değerleri kopyalayarak
+        // yeni bir içerik oluşturur ve oluştuduğu içeriği geriye döndürür.
+        // 1. parametre = başlangıç karakter sıra numarası 
+        // 2. parametre =kaç karakter alınacağı (karakter sayısı)
+
+        var metin = "Javascript dünya üzerinde kullanılan en yaygın script dilidir.";
+        document.write(metin + "<br>");
+
+        var sonuc = metin.substr(11, 15);  // Başlangıç eksi değer de alabilir
+        document.write(sonuc + "<br>");
+    </script>
+</body>
+</html>

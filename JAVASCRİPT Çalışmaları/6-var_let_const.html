@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        var = Standart değişken tanımlamada kullanılır.
+        let = Blok kapsamlı yerel değişken tanımlamakla kullanılır.
+        const = Sabit değişken tanımlamakta kullanılır.
+        */
+
+        var isim = "Emre ";
+        if(true){
+            var isim = "Hasan ";
+            document.write(isim);
+        }// çıktıda iki tane hasan yazdı. kod çalıştığında if bloğuna girdiğinde artık en sondaki değer atandığı için iki kere hasan yazdı
+        document.write(isim);
+        document.write("<br>")
+
+
+        let isim1 = "Emre ";
+        if(true){
+            let isim1 = "Hasan ";
+            document.write(isim1);
+        }// çıktıda hasan emre  yazdı. kod çalıştığında dışarıdaki değer ile if bloğundaki değeri karıştırmaz ayrı ayrı çalıştırır.
+        document.write(isim1);
+        document.write("<br>")
+
+        
+
+
+        const isim2 = "Emre ";
+        if(true){
+            const isim2 = "Hasan ";
+            document.write(isim2);
+        }// çıktıda hasan emre  yazdı. kod çalıştığında const sabit değer olarak atandığı için atandığı yerde o değeri yazdırır.
+        document.write(isim2);
+        document.write("<br>")
+    </script>
+</body>
+</html>

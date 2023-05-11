@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // match()  = Kendisine parametre olarak verilen değer doğrultusunda değişken içiriğini kontrol eder 
+        // ve eşleşen değer varsa içeriğineşleşen kısmından yeni bir içerik oluşturur ve oluşturduğu değeri geriye döndürür.
+        // (Düzenli ifade alabilir)
+
+        //g  = İçeriğin tamamı üzerinde çalışmasını sağlar(Düzenli ifade)
+        //i  = İçeriğin büyük harf / küçük harf olmasına bakmaz (düzenli ifade)
+
+
+        var metin = "Javascript eğitim seti - JAVASCRIPT A'dan Z'ye ";
+        document.write(metin + "<br>");
+
+        var sonuc = metin.match("Javascript"); // bu değerin aynısını gördüğünde onu yazdırır yoksa null değereni döndürür.
+        document.write(sonuc + "<br>");
+
+        var sonuc1 = metin.match(/Javascript/gi);
+        document.write(sonuc1 + "<br>");
+
+    </script>
+</body>
+</html>

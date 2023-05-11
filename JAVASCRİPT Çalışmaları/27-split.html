@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // split()  =  Kendisine parametre olarak tanımlanmış değer doğrultusunda değişken içieriğini bölümleyerek yeni bir dizi oluşturur 
+        // ve oluşturduğu değeri geriye döndürür.
+
+        var metin = "Javascript eğitim seti";
+        document.write(typeof(metin)  +"<br>");
+        document.write(metin  +"<br>");
+
+        var sonuc = metin.split(""); // bu şekilde yaparsak her harfin arasına , koyar
+        document.write(typeof(sonuc) +"<br>");
+        document.write(sonuc  +"<br>");
+
+        var sonuc1 = metin.split(" "); // bu şekilde yaparsak her boşluk arasına , koyar
+        document.write(sonuc1 +"<br>");
+
+        var sonuc2 = metin.split(" ",2); // bu şekilde yaparsak her boşluk arasına , koyar ve yandaki değere göre bakar
+        document.write(sonuc2 +"<br>");
+
+        var sonuc3 = metin.split(" "); // bu şekilde yaparsak her boşluk arasını bir index olarak alır ve verilen indexteki değeri alır
+        document.write(sonuc3[2] +"<br>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // eval()  =  Kendisine parametre olarak verilen değerleri javascript kodlamasına çevirerek 
+        // komut gibi çalıştırır ve oluşan değerleri geriye dödürür.
+
+        var deger1 = 10;
+        var deger2 = 40;
+
+        var sonuc = eval("deger1 + deger2"); // string ifadeyi komut olarak değiştiryor ve toplama işi yapıyor
+        document.write(sonuc + "<br>");
+
+        function deneme(){
+            document.write("Merhaba<br>"); 
+        }
+
+        var komut = eval("deneme()"); //tırnak içine yazılan fonksiyon çağırma adını eval metotu ile fonksiyonu direk çağırılabilir.
+    </script>
+</body>
+</html>

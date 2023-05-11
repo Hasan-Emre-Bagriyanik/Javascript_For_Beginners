@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // indexOf()  = Değişken içerisinde parametrik olarak verilen değeri arar ve ilk eşleşmeyi sağlayan değişkne 
+        // içerisinin indis / index değerini geriye döndürür.
+
+        var metin = "Javascript eğitim seti";
+        document.write(metin + "<br>");
+
+        var sonuc = metin.indexOf("e");  // 11 
+        document.write(sonuc + "<br>"); // eğer içeride yoksa -1 değerini döndürür
+
+        var sonuc2 = metin.indexOf("e",15);  // yanına değer verildeiğinde o verilen değerden sonra o harfi aramaya başlar. 19
+        document.write(sonuc2 + "<br>");
+    </script>
+</body>
+</html>

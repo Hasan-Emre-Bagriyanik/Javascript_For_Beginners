@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // charCodeAt()  =  Kendisine parametre olarak verilen değer doğrultusunda değişken içeriği karşılığı olan karakterin 
+        // unicode (evrensel kod) değerini geriye döndürür.
+
+
+        var metin = "Hasan Emre Bağrıyanık";
+        document.write(metin + "<br>");
+
+        var sonuc = metin.charCodeAt(0);
+        var sonuc1 = metin.charCodeAt(1);
+        var sonuc2 = metin.charCodeAt(2);
+        var sonuc3 = metin.charCodeAt(3);
+        var sonuc4 = metin.charCodeAt(4);     // Onluk sayı sistemine göre harflerin unicode unu verir.
+        document.write(sonuc + "<br>");
+        document.write(sonuc1 + "<br>");
+        document.write(sonuc2 + "<br>");
+        document.write(sonuc3 + "<br>");
+        document.write(sonuc4 + "<br>");
+    </script>
+</body>
+</html>

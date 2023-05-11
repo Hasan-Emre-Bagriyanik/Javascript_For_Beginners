@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // encodeURI()  =  Değişken içerisindeki metin özel karakterlerini UTF-8 (unicode dönüşüm formatı) kodlamasına deönüştürerek 
+        // oluşturduğu değeri geriye döndürür
+
+        var deger = "http://www.extraeğitim.com?eğitimsetiadı=Javascript&eğitmen=Volkan Alakent";
+        document.write(deger + "<br>");
+
+        var sonuc = encodeURI(deger);   // Düzgün yazılmayan linkte unicode kullanılır
+        document.write(sonuc + "<br>"); 
+
+    </script>
+</body>
+</html>

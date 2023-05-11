@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // substring()  = kendisine verilecek olan parametreler ile tanımlanmış değişken içeriği 
+        // aralığında bulunan değerleri kopyalayarak yeni bir içerik oluşturur ve oluşturduğu değeri geriye döndürür.
+        // 1. parametre = Başlangıç
+        // 2. parametre = Bitiş
+
+        var metin = "Javascript eğitim seti";
+        document.write(metin + "<br>");
+
+        var sonuc = metin.substring(17,11); // slice metotundan farkı substring ilk parametre son parametreden büyük olamaz 
+        document.write(sonuc);              // eğer olursa parametreleri ters çevirerek o şekilde okur. Herhangi bir hata oluşturmaz.
+
+    </script>
+</body>
+</html>
